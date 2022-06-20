@@ -1,15 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <link rel="stylesheet" href="scss/style1.3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
 
+    
+        <div class="upperMenu">
+            <div class="upperMenu__wrapper">
+                <div class="upperMenu__containerLeft">
+                    <span class="upperMenu__burgerIcon"><img class="upperMenu__burger" src="img/burger.svg" alt="burger icon"></span>
+                    <span class="upperMenu__dividerIcon"><img class="upperMenu__dividerFirst upperMenu__divider"  src="img/divider.svg" alt="divider icon"></span>
+                    <span class="upperMenu__groupIcon"><img  class="upperMenu__group" src="img/Group.svg" alt="Group icon"></span>
+                </div>
+                <div class="upperMenu__containerRight">
+                    <span class="upperMenu__callIcon"><img  class="upperMenu__call" src="img/call.svg" alt="call icon"></span>
+                    <span class="upperMenu__chatIcon"><img  class="upperMenu__chat" src="img/chat.svg" alt="chat icon"></span>
+                    <span class="upperMenu__profileIcon"><img  class="upperMenu__profile" src="img/profile.svg" alt="profile icon"></span>
+                    <span class="upperMenu__dividerIcon"><img class="upperMenu__divider"  src="img/divider.svg" alt="divider icon"></span>
+                    <span class="repairIcon"><img class="upperMenu__repair"  src="img/repair.svg" alt="repair icon"></span>
+                    <span class="upperMenu__checkIcon"><img class="upperMenu__check"  src="img/checkstatus.svg" alt="checkstatus icon"></span>
+                </div>
+            </div>
+        </div>
+
+    <main>
+        <div class="about">
+            <div class="about__wrapper">
+                <img src="highlight.svg" alt="" class="about__highlight">
+                <h1 class="about__title">Услуги и сервисы</h1>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services__wrapper">
+                <button class="services__repairees">Ремонтируемые устройства</button>
+                <button class="services__additionals">До<span class="services__letterp">п</span><span class="services__lettero">о</span>лнительные услуги</button>
+                <button class="services__price">Цены на услуги</button>
+                <button class="services__address">Адреса сервисных центров</button>
+                <button class="services__priceSpecial">Специальные цены</button>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description__wrapper">
+                <div class="description__describer">
+                    <article class="description__text">
+                        <p class="description__p1">Мы являемся авторизованным сервисным центром по ремонту техники <span class="description__english" lang="en">Dell</span>. Только у нас вы можете отремонтировать свой ноутбук <span class="description__english" lang="en">Dell</span> с официальной гарантией производителя.</p>
+                        <br>
+                        <p class="description__p2">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        </p>
+                    </article>
+                    <button class="description__button">Читать далее</button>
+                </div>
+                <div class="description__photo">
+                    <img src="img/Picture Copy 320.jpg" alt="CPS green text image" class="description__imageXS">
+                    <img src="img/CPS_md.jpg" alt="CPS logo" class="description__imageMD">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
