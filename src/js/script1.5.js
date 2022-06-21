@@ -52,7 +52,7 @@ if ($(window).width() > 767 && $(window).width() <= 1199) {
         'visibility:visible; display:inline-block;'
       )
       sony.setAttribute('style', 'visibility:visible; display:inline-block;')
-      expand.setAttribute('style', 'transform:rotate(360deg);')
+      expand.setAttribute('style', 'transform:rotate(180deg);')
       text.textContent = 'Скрыть'
     }
   })
@@ -62,7 +62,7 @@ if ($(window).width() > 767 && $(window).width() <= 1199) {
       lenovo2.setAttribute('style', 'visibility:hidden; display:none;')
       apple2.setAttribute('style', 'visibility:hidden; display:none;')
       samsung2.setAttribute('style', 'visibility:hidden; display:none;')
-      expand.setAttribute('style', 'transform:rotate(180deg);')
+      expand.setAttribute('style', 'transform:rotate(360deg);')
       text.textContent = 'Показать все'
     } else {
       lenovo2.setAttribute('style', 'visibility:visible; display:inline-block;')
@@ -71,7 +71,7 @@ if ($(window).width() > 767 && $(window).width() <= 1199) {
         'style',
         'visibility:visible; display:inline-block;'
       )
-      expand.setAttribute('style', 'transform:rotate(360deg);')
+      expand.setAttribute('style', 'transform:rotate(180deg);')
       text.textContent = 'Скрыть'
     }
   })

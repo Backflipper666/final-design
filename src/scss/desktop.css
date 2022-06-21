@@ -1,9 +1,11 @@
+
 .wrapper{
     background-color: rgb(37, 29, 29);
 }
+/*
 .btn__expand{
     transform: rotate(180deg);
-}
+}*/
 
 .swiper{
     display: none;
