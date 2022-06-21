@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive design</title>
     <link rel="stylesheet" href="scss/style1.3.css">
+    <link rel="stylesheet" href="scss/style1.5.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="scss/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="scss/tablets.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="scss/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 </head>
 <body>
 
@@ -67,7 +77,7 @@
             </div>
         </div>
     </main>
-
+    <!--1.5 start-->
     <div class="wrapper-header">
         <h1 class="wrapper-header__title">Ремонт техники различных брендов</h1>
     </div>
@@ -78,17 +88,17 @@
    
         <div class="labels">
             <div class="labels__wrapper">
-                <img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo">
-                <img src="samsung.svg" alt="samsung logo" class="labels__samsung">
-                <img src="ringo.svg" alt="apple logo" class="labels__apple">
-                <img src="viewSonic.svg" alt="view sonic logo" class="labels__view-sonic">
-                <img src="bosch.svg" alt="bosch logo" class="labels__bosch">
-                <img src="hp.svg" alt="hp logo" class="labels__hp">
-                <img src="acer.svg" alt="acer logo" class="labels__acer">
-                <img src="sony.svg" alt="sony logo" class="labels__sony">
-                <img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo2">
-                <img src="samsung2.svg" alt="samsung logo" class="labels__samsung2">
-                <img src="ringo2.svg" alt="apple logo" class="labels__apple2">
+                <img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo">
+                <img src="img/samsung.svg" alt="samsung logo" class="labels__samsung">
+                <img src="img/ringo.svg" alt="apple logo" class="labels__apple">
+                <img src="img/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic">
+                <img src="img/bosch.svg" alt="bosch logo" class="labels__bosch">
+                <img src="img/hp.svg" alt="hp logo" class="labels__hp">
+                <img src="img/acer.svg" alt="acer logo" class="labels__acer">
+                <img src="img/sony.svg" alt="sony logo" class="labels__sony">
+                <img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo2">
+                <img src="img/samsung2.svg" alt="samsung logo" class="labels__samsung2">
+                <img src="img/ringo2.svg" alt="apple logo" class="labels__apple2">
             </div>
 
 
@@ -100,17 +110,17 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
-            <div class="swiper-slide"><img src="samsung.svg" alt="samsung logo" class="labels__samsung"></div>
-            <div class="swiper-slide"><img src="ringo.svg" alt="apple logo" class="labels__apple"></div>
-            <div class="swiper-slide"><img src="viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
-            <div class="swiper-slide"><img src="bosch.svg" alt="bosch logo" class="labels__bosch"></div>
-            <div class="swiper-slide"><img src="hp.svg" alt="hp logo" class="labels__hp"></div>
-            <div class="swiper-slide"><img src="acer.svg" alt="acer logo" class="labels__acer"></div>
-            <div class="swiper-slide"><img src="sony.svg" alt="sony logo" class="labels__sony"></div>
-            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
-            <div class="swiper-slide"><img src="samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
-            <div class="swiper-slide"><img src="ringo2.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/samsung.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="img/ringo.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="img/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+            <div class="swiper-slide"><img src="img/bosch.svg" alt="bosch logo" class="labels__bosch"></div>
+            <div class="swiper-slide"><img src="img/hp.svg" alt="hp logo" class="labels__hp"></div>
+            <div class="swiper-slide"><img src="img/acer.svg" alt="acer logo" class="labels__acer"></div>
+            <div class="swiper-slide"><img src="img/sony.svg" alt="sony logo" class="labels__sony"></div>
+            <div class="swiper-slide"><img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
+            <div class="swiper-slide"><img src="img/ringo2.svg" alt="apple logo" class="labels__apple"></div>
             
             </div>
             <!-- If we need pagination -->
@@ -132,5 +142,6 @@
                 <span class="btn__text">Показать все</span>
             </div>
         </button>
+         <!--1.5 end-->
 </body>
 </html>
