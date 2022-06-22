@@ -16,3 +16,15 @@
    visibility: hidden;
    
 }
+
+/*block  1.6 sidebar*/
+.wrapper1-4{
+    visibility: visible;
+    display: block;
+    position: absolute;
+    box-shadow: none;
+}
+.upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn{
+    margin-left: 320px;
+}
+
