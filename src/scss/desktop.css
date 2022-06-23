@@ -21,7 +21,7 @@
 .wrapper1-4{
     visibility: visible;
     display: block;
-    position: absolute;
+    position: fixed;
     box-shadow: none;
 }
 .upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn{
