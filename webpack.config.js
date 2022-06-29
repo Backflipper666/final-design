@@ -2,7 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   // Входной файл
@@ -18,6 +18,14 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract css to separate file
+          'css-loader', // translates CSS into CommonJS
+          'postcss-loader' // parse CSS and add vendor prefixes to CSS rules
+        ]
+      },
       // Транспилируем js с babel
       {
         test: /\.js$/,
@@ -33,7 +41,7 @@ module.exports = {
 
       // Компилируем SCSS в CSS
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS

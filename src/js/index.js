@@ -1,4 +1,11 @@
-//import '../scss/style.scss'
+import * as $ from 'jquery'
+import '../scss/style.scss'
+import '../scss/style1.3.css'
+import '../scss/desktop.css'
+import '../scss/mobile.css'
+import '../scss/style1.4.css'
+import '../scss/style1.5.css'
+import '../scss/tablets.css'
 
 console.log('Works!')
 
